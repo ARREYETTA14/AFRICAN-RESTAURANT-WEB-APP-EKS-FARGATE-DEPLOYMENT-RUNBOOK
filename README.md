@@ -1,34 +1,34 @@
 # 🍽️ AFRICAN RESTAURANT WEB APP — EKS + FARGATE DEPLOYMENT RUNBOOK
 
 ```plaintext
-                                                        🌐 USER BROWSER
-                                                               |
-                                                               v
-                                                 +---------------------------+
-                                                 |   AWS LOAD BALANCER       |
-                                                 |   (LoadBalancer Service)  |
-                                                 +---------------------------+
-                                                               |
-                                                               v
-                                                 +---------------------------+
-                                                 |   FRONTEND POD (NGINX)    |
-                                                 |   Fargate Serverless      |
-                                                 +---------------------------+
-                                                               |
-                                                               v
-                                                 +---------------------------+
-                                                 |   BACKEND POD (FLASK)     |
-                                                 |   Fargate Serverless      |
-                                                 +---------------------------+
-                                                               |
-                                                               v
-                                                 +---------------------------+
-                                                 |   DATABASE POD (MYSQL)    |
-                                                 |   Fargate Serverless      |
-                                                 +---------------------------+
-                                
-                                Static Assets:
-                                                 AWS S3 BUCKET
+                                                  🌐 USER BROWSER
+                                                         |
+                                                         v
+                                           +---------------------------+
+                                           |   AWS LOAD BALANCER       |
+                                           |   (LoadBalancer Service)  |
+                                           +---------------------------+
+                                                         |
+                                                         v
+                                           +---------------------------+
+                                           |   FRONTEND POD (NGINX)    |
+                                           |   Fargate Serverless      |
+                                           +---------------------------+
+                                                         |
+                                                         v
+                                           +---------------------------+
+                                           |   BACKEND POD (FLASK)     |
+                                           |   Fargate Serverless      |
+                                           +---------------------------+
+                                                         |
+                                                         v
+                                           +---------------------------+
+                                           |   DATABASE POD (MYSQL)    |
+                                           |   Fargate Serverless      |
+                                           +---------------------------+
+                          
+                          Static Assets:
+                                           AWS S3 BUCKET
 ```
 
 ## STEP 1: CREATE EC2 INSTANCE
